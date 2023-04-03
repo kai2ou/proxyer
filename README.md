@@ -15,7 +15,7 @@
 
 ```bash
 # wget install 
-wget --no-check-certificate https://raw.githubusercontent.com/barretlee/proxyer/master/install.sh && chmod +x install.sh && sudo ./install.sh
+wget --no-check-certificate https://raw.githubusercontent.com/kai2ou/proxyer/master/install.sh && chmod +x install.sh && sudo ./install.sh
 
 # curl install
 curl -O https://raw.githubusercontent.com/barretlee/proxyer/master/install.sh && chmod +x install.sh && sudo ./install.sh
