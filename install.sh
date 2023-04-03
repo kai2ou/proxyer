@@ -113,10 +113,10 @@ ensure_pass() {
 # Ensure the correct ENCRYPT_TYPE is set.
 ensure_encrypt_type() {
     if [ -z "$ENCRYPT_TYPE" ]; then
-        read -p "加密方式（encrypt_type）的值，请输入（如 aes-256-cfb）：" ENCRYPT_TYPE
+        read -p "加密方式（encrypt_type）的值，请输入（如 xchacha20-ietf-poly1305）：" ENCRYPT_TYPE
     fi
 
-    local valid_types=("aes-256-cfb" "other-valid-type")
+    local valid_types=("aes-256-cfb" "xchacha20-ietf-poly1305")
     for valid_type in "${valid_types[@]}"; do
         if [ "$ENCRYPT_TYPE" == "$valid_type" ]; then
             echo "当前加密方式是：$ENCRYPT_TYPE"
